@@ -36,19 +36,19 @@ songitem.forEach((element, i) => {
   element.getElementsByClassName("SongName")[0].innerText = Songs[i].songname;
 });
 
-inline.addEventListener("click",()=>{
-  if(audio.paused||audio1.currentTime==0){
-    audio.play();
-    one.classList.remove("fa-play");
-    one.classList.add("fa-pause");
-  }
+// inline.addEventListener("click",()=>{
+//   if(audio.paused||audio1.currentTime==0){
+//     audio.play();
+//     one.classList.remove("fa-play");
+//     one.classList.add("fa-pause");
+//   }
 
-  else{
-    audio1.pause();
-    one.classList.remove("fa-pause");
-    one.classList.add("fa-play");
-  }
-});
+//   else{
+//     audio1.pause();
+//     one.classList.remove("fa-pause");
+//     one.classList.add("fa-play");
+//   }
+// });
 play.addEventListener('click', ()=> {
   if(audio.paused||audio.currentTime==0){
     audio.play();
